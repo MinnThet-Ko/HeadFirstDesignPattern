@@ -1,0 +1,13 @@
+package com.classes;
+
+import com.interfaces.FlyBehavior;
+
+public class FlyWithRockets implements FlyBehavior {
+
+	@Override
+	public void fly() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
