@@ -1,0 +1,23 @@
+package com.classes;
+
+import com.interfaces.FlyBehavior;
+import com.interfaces.SwimBehavior;
+
+public abstract class Duck {
+	FlyBehavior flyBehavior;
+	SwimBehavior swimBehavior;
+	
+	public Duck(){
+		
+	}
+	
+	public abstract void display();
+	
+	public void performFly() {
+		this.flyBehavior.fly();
+	}
+	
+	public void perfromSwim() {
+		this.swimBehavior.swim();
+	}
+}
