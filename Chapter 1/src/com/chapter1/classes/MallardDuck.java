@@ -1,4 +1,4 @@
-package com.classes;
+package com.chapter1.classes;
 
 public class MallardDuck extends Duck{
 

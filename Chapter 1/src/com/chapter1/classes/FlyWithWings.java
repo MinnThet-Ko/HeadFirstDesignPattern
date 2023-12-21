@@ -1,6 +1,6 @@
-package com.classes;
+package com.chapter1.classes;
 
-import com.interfaces.FlyBehavior;
+import com.chapter1.interfaces.FlyBehavior;
 
 public class FlyWithWings implements FlyBehavior{
 

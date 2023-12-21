@@ -1,6 +1,6 @@
-package com.classes;
+package com.chapter1.classes;
 
-import com.interfaces.QuackBehavior;
+import com.chapter1.interfaces.QuackBehavior;
 
 public class Quack implements QuackBehavior {
 
