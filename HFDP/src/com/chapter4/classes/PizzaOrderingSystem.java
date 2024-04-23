@@ -10,7 +10,7 @@ import com.chapter4.interfaces.PizzaStore;
 public class PizzaOrderingSystem {
 
 	public static void main(String[] args) {
-		PizzaStore pizzaStore = new ObjectVillPizzaStore(new SimplePizzaFactory());
+		PizzaStore pizzaStore = new NYPizzaStore();
 		Map<Integer, String> pizzaMap = new HashMap<Integer, String>();
 		pizzaMap.put(1, "cheese");
 		pizzaMap.put(2, "pepperoni");
