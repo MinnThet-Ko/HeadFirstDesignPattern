@@ -1,7 +1,12 @@
 package com.chapter6.receivers;
 
-public class GarageDoor {
+public class GarageDoor extends GenericReceiver{
 	
+	public GarageDoor(String location) {
+		super(location);
+		// TODO Auto-generated constructor stub
+	}
+
 	public void up() {
 		System.out.println("Garage door is going up.");
 	}
@@ -14,11 +19,11 @@ public class GarageDoor {
 		System.out.println("Garage door is stopped.");
 	}
 	
-	public void lightOn() {
+	public void on() {
 		System.out.println("Garage door light is on.");
 	}
 	
-	public void lightOff() {
+	public void off() {
 		System.out.println("Garage door light is off.");
 	}
 }

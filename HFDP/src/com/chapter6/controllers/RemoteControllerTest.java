@@ -11,7 +11,7 @@ public class RemoteControllerTest {
 		
 		SimpleRemoteController remote = new SimpleRemoteController();
 		
-		Light light = new Light();
+		Light light = new Light("");
 		LightOnCommand lightOnCommand = new LightOnCommand(light);
 		
 		
@@ -19,7 +19,7 @@ public class RemoteControllerTest {
 		
 		remote.pressButton();
 		
-		GarageDoor garageDoor = new GarageDoor();
+		GarageDoor garageDoor = new GarageDoor("");
 		GarageDoorOpenCommand garageDoorOpenCommand = new GarageDoorOpenCommand(garageDoor);
 		
 		
