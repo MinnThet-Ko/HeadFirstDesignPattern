@@ -16,4 +16,9 @@ public class OnCommand implements Command{
 		this.receiver.on();
 	}
 
+	@Override
+	public void undo() {
+		this.receiver.off();
+	}
+
 }

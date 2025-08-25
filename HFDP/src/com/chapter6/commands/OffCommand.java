@@ -14,6 +14,10 @@ public class OffCommand implements Command{
 	public void execute() {
 		this.receiver.off();
 	}
+	@Override
+	public void undo() {
+		this.receiver.on();
+	}
 	
 
 

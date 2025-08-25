@@ -9,4 +9,9 @@ public class NoCommand implements Command{
 		System.out.println("No actual action is formed yet.");
 	}
 
+	@Override
+	public void undo() {
+		System.out.println("No actual action is formed yet.");
+	}
+
 }

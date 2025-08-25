@@ -28,9 +28,15 @@ public class RemoterController {
 	
 	public void pushOnButton(int slot) {
 		this.onCommands[slot].execute();
+		this.undoCommand = this.onCommands[slot];
 	}
 	
 	public void pushOffButton(int slot) {
 		this.offCommands[slot].execute();
+		this.undoCommand = this.offCommands[slot];
+	}
+	
+	public void pushUndoButton() {
+		this.undoCommand.undo();
 	}
 }

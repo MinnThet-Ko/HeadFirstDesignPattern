@@ -15,5 +15,9 @@ public class GarageDoorOpenCommand implements Command {
 		this.garageDoor.up();
 
 	}
+	@Override
+	public void undo() {
+		this.garageDoor.down();
+	}
 
 }

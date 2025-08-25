@@ -1,5 +1,7 @@
 package com.chapter6.controllers;
 
+import com.chapter6.commands.GarageDoorOffCommand;
+import com.chapter6.commands.GarageDoorOpenCommand;
 import com.chapter6.commands.OffCommand;
 import com.chapter6.commands.OnCommand;
 import com.chapter6.interfaces.Command;
@@ -24,8 +26,8 @@ public class RemoteControllerTest2 {
 		OnCommand livingLightsOnCommand = new OnCommand(livingRoomLights);
 		OffCommand livingLightsOffCommand = new OffCommand(livingRoomLights);
 		
-		OnCommand garageDoorsOnCommand = new OnCommand(garageDoor);
-		OffCommand garageDoorOffCommand = new OffCommand(garageDoor);
+		GarageDoorOpenCommand garageDoorsOnCommand = new GarageDoorOpenCommand(garageDoor);
+		GarageDoorOffCommand garageDoorOffCommand = new GarageDoorOffCommand(garageDoor);
 		
 		OnCommand stereoLightsOnCommand = new OnCommand(stereo);
 		OffCommand stereoLightsOffCommand = new OffCommand(stereo);
@@ -45,8 +47,10 @@ public class RemoteControllerTest2 {
 		controller.pushOnButton(2);
 		controller.pushOnButton(1);
 		controller.pushOffButton(2);
+		controller.pushUndoButton();
 		controller.pushOnButton(3);
 		controller.pushOnButton(0);
+		controller.pushUndoButton();
 		controller.pushOffButton(3);
 		controller.pushOffButton(0);
 		controller.pushOnButton(4);
